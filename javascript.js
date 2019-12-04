@@ -5,7 +5,7 @@ const patterns = {
         number : /[0-9]{11},
         username: /^[a-z\d]{5,12}$/i,
         password: /^[\d\w@-]{8,20}$/i,
-        search: ^[A-Z][a-zA-Z]*$ //first letter must be uppercase
+        search: /^[A-Z][a-zA-Z]*$/ //first letter must be uppercase
 };
 
 const inputs = document.querySelectorAll('input');
